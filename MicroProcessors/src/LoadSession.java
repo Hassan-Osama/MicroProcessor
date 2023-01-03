@@ -1,9 +1,10 @@
 
 public class LoadSession {
-	int busy;
+	boolean busy;
 	int address;
-	public LoadSession(int busy, int address) {
-		this.busy=busy;
-		this.address=address;
+	int execTime=0;
+	public LoadSession() {
+		this.busy=false;
+		
 	}
 }

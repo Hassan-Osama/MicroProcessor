@@ -4,10 +4,17 @@ public class Instruction {
 	public String destination;
 	public int effAddress=-1;
 	public String source1,source2;
+	public int startexec =-1;
+	public int endexec =-1;
 	public Instruction(String type,String destination,int effAddress) {
 		this.type=type;
 		this.destination=destination;
 		this.effAddress=effAddress;
+		this.source1="";
+		this.source2="";
+	}
+	public Instruction() {
+		
 	}
 	public Instruction(String type,String destination,String source1,String source2) {
 		this.type=type;
